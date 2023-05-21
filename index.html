@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity and water bill</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Tính tiền điện, tiền nước</h1>
+      <div class="content">
+        <form action="">
+          <div class="form-group">
+            <label for="electric-price">Số tiền điện:</label>
+            <input
+              type="number"
+              id="electric-price"
+              min="0"
+              value="0"
+              placeholder="Nhập số tiền điện..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="water-price">Số tiền nước:</label>
+            <input
+              type="number"
+              id="water-price"
+              min="0"
+              value="0"
+              placeholder="Nhập số tiền nước..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="floor-num">Số tầng trọ:</label>
+            <input
+              type="number"
+              id="floor-num"
+              min="1"
+              value="2"
+              placeholder="Nhập số tầng trọ..."
+            />
+          </div>
+          <div id="floor-info"></div>
+          <div class="form-group">
+            <button id="calculator">Tính</button>
+          </div>
+        </form>
+        <div id="result"></div>
+      </div>
+    </main>
+    <script src="calculations.js"></script>
+  </body>
+</html>
